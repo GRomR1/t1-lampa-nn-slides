@@ -39,22 +39,19 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Install Playwright Chromium & system dependencies
-        run: pnpm exec playwright install --with-deps chromium
-
-      - name: Build Slidev with PDF download
+      - name: Prepare public assets
         run: |
-          pnpm exec slidev build documents/slides.md --base / --download
+          mkdir -p documents/public
+          [ -e documents/public/assets ] || ln -s ../assets documents/public/assets
 
-      - name: Ensure PDF availability & CNAME
+      - name: Build Slidev
+        run: |
+          pnpm exec slidev build documents/slides.md --base / --without-notes
+
+      - name: Copy PDF & CNAME to dist
         run: |
           echo "t1-lampa.gainanov.pro" > documents/dist/CNAME
-          if [ -f documents/dist/slidev-exported.pdf ]; then
-            cp documents/dist/slidev-exported.pdf documents/dist/export.pdf
-          elif [ -f documents/export.pdf ]; then
-            cp documents/export.pdf documents/dist/export.pdf
-            cp documents/export.pdf documents/dist/slidev-exported.pdf
-          fi
+          cp documents/export.pdf documents/dist/export.pdf
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

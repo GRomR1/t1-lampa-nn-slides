@@ -4,6 +4,7 @@ layout: cover
 title: От ноутбука до multi-GPU
 info: Инфраструктура и софт для локального запуска LLM
 transition: slide-left
+download: '/export.pdf'
 ---
 
 # От ноутбука до multi-GPU
@@ -41,7 +42,7 @@ AI в 2026 году вышел далеко за пределы чата. Сце
 
 ---
 layout: image
-image: ./assets/pay-variants.png
+image: /assets/pay-variants.png
 backgroundSize: contain
 ---
 
@@ -68,7 +69,7 @@ layout: center
 
 ---
 layout: image
-image: ./assets/abliterated-lora.png
+image: /assets/abliterated-lora.png
 backgroundSize: contain
 ---
 
@@ -118,7 +119,7 @@ layout: center
 
 ---
 layout: image
-image: ./assets/model-classification.png
+image: /assets/model-classification.png
 backgroundSize: contain
 ---
 
@@ -161,19 +162,19 @@ layout: default
 
 ---
 layout: image
-image: ./assets/kimi-k3-score.png
+image: /assets/kimi-k3-score.png
 backgroundSize: contain
 ---
 
 ---
 layout: image
-image: ./assets/self-hosted-kimi.png
+image: /assets/self-hosted-kimi.png
 backgroundSize: contain
 ---
 
 ---
 layout: image
-image: ./assets/big-isnot-better.jpg
+image: /assets/big-isnot-better.jpg
 backgroundSize: contain
 class: bg-black
 ---
@@ -186,7 +187,7 @@ layout: section
 
 ---
 layout: image
-image: ./assets/soft-for-llm.png
+image: /assets/soft-for-llm.png
 backgroundSize: contain
 ---
 
@@ -209,7 +210,7 @@ layout: default
 
 ---
 layout: image
-image: ./assets/work-hardware.png
+image: /assets/work-hardware.png
 backgroundSize: contain
 class: bg-black
 ---
@@ -230,12 +231,12 @@ layout: collage
 ---
 
 <div class="grid grid-cols-3 grid-rows-2 w-full h-full gap-0 m-0 bg-black">
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/1-rtx-3090-24gb.png')"></div>
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/2-mac-m1-max-32.png')"></div>
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/3-beelink-128gb.png')"></div>
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/4-mac-studio-m4-max-128gb.png')"></div>
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/5-dgx-spark-128g.png')"></div>
-  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('./assets/6-macbook-m5-max-128g.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/1-rtx-3090-24gb.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/2-mac-m1-max-32.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/3-beelink-128gb.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/4-mac-studio-m4-max-128gb.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/5-dgx-spark-128g.png')"></div>
+  <div v-click class="bg-contain bg-center bg-no-repeat w-full h-full" style="background-image: url('/assets/6-macbook-m5-max-128g.png')"></div>
 </div>
 ---
 layout: default

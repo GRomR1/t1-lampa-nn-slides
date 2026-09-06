@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "slidev documents/slides.md --bind 0.0.0.0 --port 3000",
     "build": "slidev build documents/slides.md",
-    "build:pages": "slidev build documents/slides.md --base / --download",
+    "build:pages": "slidev build documents/slides.md --base / --without-notes",
+    "preview": "vite preview --outDir documents/dist",
     "export": "slidev export documents/slides.md --output documents/export.pdf"
   },
   "dependencies": {
@@ -16,7 +17,8 @@
     "@iconify-json/mdi": "^1.2.3",
     "@playwright/test": "^1.59.1",
     "playwright-chromium": "^1.59.1",
-    "pngjs": "^7.0.0"
+    "pngjs": "^7.0.0",
+    "vite": "^8.2.2"
   },
   "packageManager": "pnpm@11.20.0"
 }
