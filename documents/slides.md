@@ -127,6 +127,43 @@ backgroundSize: contain
 ---
 
 ---
+layout: default
+---
+
+# Где смотреть рейтинги моделей?
+
+При выборе модели для реальных задач стоит опираться на независимые лидерборды:
+
+<div class="grid grid-cols-3 gap-4 mt-6">
+  <div class="t1-card">
+    <h3 class="font-bold"><a href="https://arena.ai/leaderboard/code/webdev/fullstack" target="_blank">arena.ai</a></h3>
+    <p class="text-sm mt-2 text-gray-700">
+      Слепые A/B-тесты (LMSYS Chatbot Arena). Специализированный лидерборд для webdev и fullstack-разработки.
+    </p>
+  </div>
+  <div class="t1-card">
+    <h3 class="font-bold"><a href="https://llm-stats.com/leaderboards/best-ai-for-coding" target="_blank">llm-stats.com</a></h3>
+    <p class="text-sm mt-2 text-gray-700">
+      Сводная статистика и актуальный рейтинг лучших моделей для написания и рефакторинга кода.
+    </p>
+  </div>
+  <div class="t1-card">
+    <h3 class="font-bold"><a href="https://artificialanalysis.ai/models#intelligence-breakdown" target="_blank">artificialanalysis.ai</a></h3>
+    <p class="text-sm mt-2 text-gray-700">
+      Независимый бенчмарк качества (intelligence breakdown), скорости инференса (токены/сек) и стоимости.
+    </p>
+  </div>
+</div>
+
+<div class="mt-6 text-sm">
+  <p class="font-semibold text-gray-800">На что обращать внимание:</p>
+  <ul class="mt-1 space-y-1 text-gray-600">
+    <li>• <strong>Coding & Agentic benchmarks:</strong> оценивайте тесты на реальном коде, а не синтетические метрики.</li>
+    <li>• <strong>Соотношение качество / размер:</strong> для локального запуска критичен баланс VRAM и скорости.</li>
+  </ul>
+</div>
+
+---
 layout: image
 image: ./assets/big-isnot-better.jpg
 backgroundSize: contain
