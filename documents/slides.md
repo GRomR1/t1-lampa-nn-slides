@@ -268,12 +268,22 @@ layout: default
 - Главное — считать экономику и выбирать стек под реальную нагрузку.
 
 ---
-layout: end
+layout: image
+image: /assets/the-end-qr.png
+backgroundSize: contain
+class: bg-black
 ---
 
-# Вопросы?
-
-TODO
+<div class="t1-card" style="position: relative; 
+                            background: rgba(255, 255, 255, 0.0);">
+  <h2 class="font-bold">
+    <a href="http://t1-lampa.gainanov.pro/"
+       target="_blank"
+       style="position: absolute; top: 400px; left: 95px;">
+      t1-lampa.gainanov.pro
+    </a>
+  </h2>
+</div>
 
 ---
 layout: q-and-a
