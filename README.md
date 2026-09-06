@@ -13,6 +13,8 @@ pnpm run dev      # http://localhost:3000
 |---------|----------|
 | `pnpm run dev` | Dev-сервер Slidev (порт 3000) |
 | `pnpm run build` | Статическая сборка в `documents/dist/` |
+| `pnpm run build:pages` | Продакшен-сборка под GitHub Pages (`--base / --without-notes`) |
+| `pnpm run preview` | Локальный предпросмотр продакшен-сборки (`documents/dist/`) |
 | `pnpm run export` | Экспорт PDF → `documents/export.pdf` |
 
 ### PDF-экспорт
@@ -32,9 +34,11 @@ pnpm run export
 documents/
   slides.md                          # Исходник презентации
   export.pdf                         # Экспортированный PDF
-AGENTS.md                            # Инструкции для ИИ-агентов в этом репо
+  assets/                            # Изображения и ассеты презентации
+  public/                            # Публичные файлы для раздачи без хэшей (favicon.svg, симлинк assets)
 ```
 
+AGENTS.md                            # Инструкции для ИИ-агентов в этом репо
 ## Редактирование слайдов
 
 Презентация в формате [Slidev](https://sli.dev): Markdown + `---` между слайдами, Mermaid-диаграммы, `v-click` анимации, presenter notes в HTML-комментариях.

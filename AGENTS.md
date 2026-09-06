@@ -7,7 +7,9 @@ This repository contains presentations and reports built using **Slidev**, a web
 ## Available CLI Scripts
 
 - `pnpm run dev` - Start Slidev dev server.
-- `pnpm run build` - Build the presentation into a static SPA.
+- `pnpm run build` - Build the presentation into a static SPA (`documents/dist/`).
+- `pnpm run build:pages` - Build production SPA for GitHub Pages (`--base / --without-notes`).
+- `pnpm run preview` - Local preview of the production build in `documents/dist/` via Vite.
 - `pnpm run export` - Export the presentation to PDF format (uses Playwright Chromium).
 
 ## Guidelines for Agents
