@@ -6,6 +6,7 @@ info: Инфраструктура и софт для локального за�
 transition: slide-left
 download: '/export.pdf'
 favicon: '/favicon.svg'
+titleTemplate: '%s - Т1 ЛАМПА: Бэкэнд 2.0 (НН.2026)'
 ---
 
 # От ноутбука до multi-GPU
