@@ -44,10 +44,11 @@ jobs:
 
       - name: Build Slidev with PDF download
         run: |
-          pnpm exec slidev build documents/slides.md --base /${{ github.event.repository.name }}/ --download
+          pnpm exec slidev build documents/slides.md --base / --download
 
-      - name: Ensure PDF availability
+      - name: Ensure PDF availability & CNAME
         run: |
+          echo "t1-lampa.gainanov.pro" > documents/dist/CNAME
           if [ -f documents/dist/slidev-exported.pdf ]; then
             cp documents/dist/slidev-exported.pdf documents/dist/export.pdf
           elif [ -f documents/export.pdf ]; then
