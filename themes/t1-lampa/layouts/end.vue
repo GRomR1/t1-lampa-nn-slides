@@ -14,7 +14,7 @@ const style = computed(() => handleBackground(props.background))
 
 <template>
   <div class="slidev-layout end t1-blue-bg" :style="style">
-    <div class="w-full h-full flex flex-col justify-center">
+    <div class="w-full h-full flex flex-col">
       <div class="max-w-[62%]">
         <h1 class="end-title">
           <slot name="title" />

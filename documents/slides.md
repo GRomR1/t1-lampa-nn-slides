@@ -48,7 +48,6 @@ backgroundSize: contain
 ---
 layout: center
 ---
-<!-- Кто пытался оплатить зарубежный AI-сервис с юрлица в РФ за последний год? (заголовок убран) -->
 
 <v-clicks>
 
@@ -66,11 +65,6 @@ layout: center
 
 <img src="./assets/the-illusion.jpg" class="h-96 rounded shadow-lg mx-auto mt-8" />
 
----
-layout: image
-image: ./assets/self-hosted-kimi.png
-backgroundSize: contain
----
 
 ---
 layout: image
@@ -82,17 +76,19 @@ backgroundSize: contain
 layout: default
 ---
 
-# Зачем локально? Три драйвера в РФ
+# Зачем локально?
 
 1. **Контроль**
-   - Версия модели, квантизация, промпты — без сюрпризов от провайдера
-   - "Купил и забыл"
+   - Версия модели и квантизация
+   - Без сюрпризов от провайдера
 2. **Безопасность и закон**
    - ФЗ-152, КИИ, коммерческая тайна. Утечка = риск
-3. **Автономность**
-   - Изолированно
+3. **Автономность и доступность**
+   - Изоляция
    - Без лимитов
    - Без риска блокировки
+4. **Кастомизация**
+   - Дообучение и модель под задачу
 
 ---
 layout: section
@@ -158,10 +154,22 @@ layout: default
 <div class="mt-6 text-sm">
   <p class="font-semibold text-gray-800">На что обращать внимание:</p>
   <ul class="mt-1 space-y-1 text-gray-600">
-    <li>• <strong>Coding & Agentic benchmarks:</strong> оценивайте тесты на реальном коде, а не синтетические метрики.</li>
-    <li>• <strong>Соотношение качество / размер:</strong> для локального запуска критичен баланс VRAM и скорости.</li>
+    <li><strong>Coding & Agentic benchmarks:</strong> оценивайте тесты на реальном коде, а не синтетические метрики.</li>
+    <li><strong>Соотношение качество / размер:</strong> для локального запуска критичен баланс VRAM и скорости.</li>
   </ul>
 </div>
+
+---
+layout: image
+image: ./assets/kimi-k3-score.png
+backgroundSize: contain
+---
+
+---
+layout: image
+image: ./assets/self-hosted-kimi.png
+backgroundSize: contain
+---
 
 ---
 layout: image
@@ -236,11 +244,11 @@ layout: default
 # Краткие рекомендации
 
 - **Один разработчик / ноутбук:**
-  - Mac M4 Pro 24+ ГБ + Qwen3.6-35B-A3B + MLX/Ollama.
+  - Mac M4 Pro 24+ ГБ + Qwen3.6-35B-A3B + MLX/Ollama
 - **Команда / небольшой сервер:**
-  - 1–2× RTX 5090 32 ГБ + Qwen3.8-27B + vLLM/SGLang.
+  - 1–2× RTX 5090 32 ГБ + Qwen3.8-27B + vLLM/SGLang
 - **Корпоративный контур:**
-  - Multi-GPU A100/H100 80+ ГБ + vLLM/SGLang.
+  - Multi-GPU A100/H100 80+ ГБ + ... + vLLM/SGLang
 
 ---
 layout: section
@@ -259,10 +267,10 @@ layout: default
 - Главное — считать экономику и выбирать стек под реальную нагрузку.
 
 ---
-layout: center
+layout: end
 ---
 
-# Контакты автора
+# Вопросы?
 
 TODO
 
