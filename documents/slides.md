@@ -5,6 +5,7 @@ title: От ноутбука до multi-GPU
 info: Инфраструктура и софт для локального запуска LLM
 transition: slide-left
 download: '/export.pdf'
+favicon: '/favicon.svg'
 ---
 
 # От ноутбука до multi-GPU
